@@ -1459,3 +1459,6 @@ This comprehensive guide covers all aspects of SUMO from basic usage to advanced
 - Debug and troubleshoot common issues
 
 Practice with the examples provided, start with simple scenarios, and gradually build up to more complex simulations. The key to mastering SUMO is hands-on experience with real projects and continuous learning from the extensive SUMO documentation and community resources.
+
+# Additional References
+1. [Traffic Modeling with SUMO: a Tutorial](https://arxiv.org/html/2304.05982v2)
