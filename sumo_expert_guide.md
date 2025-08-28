@@ -1462,3 +1462,5 @@ Practice with the examples provided, start with simple scenarios, and gradually 
 
 # Additional References
 1. [Traffic Modeling with SUMO: a Tutorial](https://arxiv.org/html/2304.05982v2)
+2. [Urban Traffic Simulation with SUMO
+](https://cst.fee.unicamp.br/sites/default/files/sumo/sumo-roadmap.pdf)
