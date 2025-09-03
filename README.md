@@ -1,7 +1,5 @@
 ---
 
-# LearnBasics
-
 **A collection of learning resources and practical examples for foundational and advanced topics in programming, data science, and operations research.**
 
 ---
