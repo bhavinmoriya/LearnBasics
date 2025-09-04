@@ -1,0 +1,11 @@
+<!-- filepath: c:\Users\moriyab\Downloads\Matvi\Simulation\Baby\config\simulation.sumocfg -->
+<configuration>
+    <input>
+        <net-file value="../network.net.xml"/>
+        <route-files value="../routes.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="100"/>
+    </time>
+</configuration>

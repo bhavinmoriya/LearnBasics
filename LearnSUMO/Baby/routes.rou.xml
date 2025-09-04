@@ -1,0 +1,6 @@
+<!-- filepath: c:\Users\moriyab\Downloads\Matvi\Simulation\Baby\routes.rou.xml -->
+<routes>
+    <vType id="car" accel="1.0" decel="5.0" sigma="0.5" length="5" maxSpeed="13.9" color="1,0,0"/>
+    <route id="route0" edges="10 -10"/>
+    <vehicle id="veh0" type="car" route="route0" depart="0"/>
+</routes>
