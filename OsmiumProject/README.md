@@ -157,6 +157,9 @@ Apply your skills to real-world projects:
 - Start with small scripts to read and filter OSM data.
 - Gradually tackle more complex tasks like data validation or history analysis.
 - Share your projects or contribute to open-source OSM tools.
+
+---
+
 ### **Q & A**
 1. **OSM vs OSM.pbf**: The primary difference is that OSM refers to the OpenStreetMap XML format, which is a human-readable, text-based format, while PBF is the Protocolbuffer Binary Format, a compact, binary format that uses Protocol Buffers to serialize structured data. PBF files are significantly smaller and faster to process for data-intensive tasks than the equivalent OSM XML files, making them the recommended format for data processing and downloading.
 
