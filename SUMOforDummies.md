@@ -64,3 +64,82 @@ This would generate 100 flows of random trips across the network for one hour.
 
 **In summary:**  
 `randomTrips.py` automates the creation of random trips and/or flows in a SUMO road network, supporting a wide range of customizations and constraints, to facilitate realistic traffic simulation scenarios.
+
+## Various flags in `randomTrips.py`
+The command `python3 $SUMO_HOME/tools/randomTrips.py` is used in **SUMO (Simulation of Urban MObility)** to generate random vehicle trips for traffic simulations. This script is part of the SUMO toolchain and helps create realistic traffic demand by generating routes, departures, and vehicle types randomly.
+
+---
+
+### **What Does `randomTrips.py` Do?**
+- Generates random trips (routes) for vehicles in a SUMO simulation.
+- Outputs files like:
+  - `.rou.xml` (routes)
+  - `.trips.xml` (trips)
+  - `.vtype.xml` (vehicle types, if specified).
+- Can be customized with options for vehicle types, departure times, and route distributions.
+
+---
+
+### **Basic Usage**
+```sh
+python3 $SUMO_HOME/tools/randomTrips.py -n your_network.net.xml -o trips.trips.xml
+```
+- `-n`: Specifies the SUMO network file (`.net.xml`).
+- `-o`: Output file for trips (default: `trips.trips.xml`).
+
+---
+
+### **Common Options**
+| Option | Description |
+|--------|-------------|
+| `-n <network_file>` | SUMO network file (required). |
+| `-o <output_file>` | Output file for trips (default: `trips.trips.xml`). |
+| `--begin <time>` | Start time for departures (default: `0`). |
+| `--end <time>` | End time for departures (default: `3600` = 1 hour). |
+| `--period <seconds>` | Time between departures (default: `1`). |
+| `--validate` | Validate routes (ensure they are valid in the network). |
+| `--vehicle-class <class>` | Restrict to a vehicle class (e.g., `passenger`, `truck`). |
+| `--vtype <vtype_file>` | Use a custom vehicle type file. |
+| `--route-files <route_file>` | Output route file (`.rou.xml`). |
+| `--fringe-factor <float>` | Factor for fringe routes (default: `1.0`). |
+| `--min-distance <meters>` | Minimum route distance (default: `0`). |
+
+---
+
+### **Example: Generate Trips for 1 Hour**
+```sh
+python3 $SUMO_HOME/tools/randomTrips.py \
+  -n my_network.net.xml \
+  -o my_trips.trips.xml \
+  --begin 0 \
+  --end 3600 \
+  --period 2 \
+  --validate
+```
+- Generates trips for 1 hour (`3600` seconds).
+- Departures every 2 seconds.
+- Validates routes.
+
+---
+
+### **Example: Generate Routes for Passenger Cars**
+```sh
+python3 $SUMO_HOME/tools/randomTrips.py \
+  -n my_network.net.xml \
+  --route-files my_routes.rou.xml \
+  --vehicle-class passenger \
+  --vtype my_vehicles.vtype.xml
+```
+- Outputs routes to `my_routes.rou.xml`.
+- Only generates passenger cars.
+- Uses custom vehicle types from `my_vehicles.vtype.xml`.
+
+---
+
+### **Notes**
+1. **SUMO_HOME**: Ensure the environment variable `SUMO_HOME` is set to your SUMO installation directory.
+2. **Dependencies**: Requires Python 3 and SUMO tools.
+3. **Validation**: Use `--validate` to avoid invalid routes.
+4. **Customization**: For advanced use, combine with `duarouter` or `jtrrouter` for dynamic routing.
+
+---
