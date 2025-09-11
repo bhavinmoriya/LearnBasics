@@ -1,9 +1,9 @@
-# Basic flow
+# Basic flow of Simulation
 - Get `.osm.pbf`
 - Convert OSM to net.xml: `netconvert --osm-files your-map.osm.pbf -o network.net.xml`    
 - Generate routes: `python3 $SUMO_HOME/tools/randomTrips.py -n network.net.xml -o routes.rou.xml`    
 - sumo.cfg:
-	- ```xml
+ ```xml
 	<configuration>
 	    <input>
 	        <net-file value="network.net.xml"/>
@@ -14,7 +14,7 @@
 	        <end value="1000"/>
 	    </time>
 	</configuration>
-	```
+```
 
 # `randomTrips.py`
 The file `randomTrips.py` is a utility script for [Eclipse SUMO (Simulation of Urban MObility)](https://eclipse.dev/sumo), a popular open-source traffic simulation package. Its main purpose is to **generate random trips** (vehicle or pedestrian routes) within a given road network, according to various customizable parameters and constraints.
