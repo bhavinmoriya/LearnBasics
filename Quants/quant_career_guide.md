@@ -1,7 +1,5 @@
 # Complete Guide to Landing a Quant Job: From Academia to Finance
 
-## Your Current Advantages
-
 ## Phase 1: Finance Fundamentals (Months 1-2)
 
 ### Essential Finance Knowledge
