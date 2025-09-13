@@ -1,12 +1,6 @@
 # Complete Guide to Landing a Quant Job: From Academia to Finance
 
 ## Your Current Advantages
-**Strong Foundation You Already Have:**
-- **PhD in Mathematics**: Exceptional analytical and problem-solving skills
-- **Research Experience**: Ability to work independently and tackle complex problems
-- **Programming Skills**: Python, SQL, and growing ML expertise
-- **International Experience**: Valuable for global financial markets
-- **Academic Publications**: Demonstrates rigorous thinking and communication
 
 ## Phase 1: Finance Fundamentals (Months 1-2)
 
