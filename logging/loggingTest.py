@@ -1,9 +1,16 @@
 import logging
 
 # Configure logging once at program start
+# logging.basicConfig(
+    # level=logging.INFO,  # default threshold
+    # format="%(asctime)s [%(levelname)s] %(message)s",  # message format
+# )
+
 logging.basicConfig(
-    level=logging.INFO,  # default threshold
-    format="%(asctime)s [%(levelname)s] %(message)s",  # message format
+    filename="mobility.log",
+    filemode="a",  # append mode
+    level=logging.DEBUG,
+    format="%(asctime)s [%(levelname)s] %(message)s"
 )
 
 # Usage

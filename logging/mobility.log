@@ -1,0 +1,5 @@
+2025-09-25 16:03:50,542 [DEBUG] This is debug (hidden if level=INFO).
+2025-09-25 16:03:50,542 [INFO] Processing trip data…
+2025-09-25 16:03:50,542 [WARNING] Missing geometry for person X.
+2025-09-25 16:03:50,542 [ERROR] Failed to write parquet file.
+2025-09-25 16:03:50,542 [CRITICAL] System is out of memory!
